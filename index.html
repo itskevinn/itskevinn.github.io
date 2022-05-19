@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/style/syles.css">
+    <title>Serie Fibonacci</title>
+</head>
+<body onload="startTime()">
+<div class="container">
+    <div class="row my-3">
+        <div class="col-5 mx-3">
+            <div class="row">
+                <h3><b>Resultado:</b></h3>
+                <div class="card result scroll my-3">
+                    <div class="row text-start">
+                        <p id="result"></p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-outline-primary" onclick="generate()">Calcular fibonacci
+                </button>
+            </div>
+
+        </div>
+        <div class="col-5 text-center">
+            <div id="clock" class="clock"></div>
+        </div>
+    </div>
+</div>
+<script src="scripts/fibonacci.js"></script>
+<script src="../src/scripts/clock.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>
